@@ -7,7 +7,7 @@ class OneToHundread extends Readable {
         const index = this.index++
         
         setTimeout(() => {
-            this.push(index > 100 ? null : Buffer.from(String(index)))
+            this.push(index > 10 ? null : Buffer.from(String(index)))
         }, 1000);
         
     }
